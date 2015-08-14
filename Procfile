@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath myexcuse.wsgi
+web: gunicorn --pythonpath myexcuse myexcuse.wsgi
