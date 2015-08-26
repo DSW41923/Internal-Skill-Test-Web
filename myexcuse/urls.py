@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from excuses.views import excuses
+from excuses.views import show_excuses
+from excuses.views import adding_excuses
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', excuses),
+    url(r'^add/$', adding_excuses),
+    url(r'^$', show_excuses),
 ]
